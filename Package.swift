@@ -6,23 +6,14 @@ import PackageDescription
 let package = Package(
     name: "FirebaseMLCommon",
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "FirebaseMLCommon",
             targets: ["FirebaseMLCommon"]),
     ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
-    ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
+        .binaryTarget(
             name: "FirebaseMLCommon",
-            dependencies: []),
-        .testTarget(
-            name: "FirebaseMLCommonTests",
-            dependencies: ["FirebaseMLCommon"]),
+            url: "https://github.com/Userstree/FirebaseMLCommon/releases/download/1.0.1/FirebaseMLCommon.xcframework.zip",
+            checksum: "15f6291101e7b075a4d7eba5e9850981c35b9363bf8caf96687426890368a2ab")
     ]
 )
