@@ -8,12 +8,12 @@ let package = Package(
     products: [
         .library(
             name: "FirebaseMLCommon",
-            targets: ["FirebaseMLCommon"]),
+            targets: ["MLCommon"]),
     ],
     targets: [
         .binaryTarget(
-            name: "FirebaseMLCommon",
-            url: "https://github.com/Userstree/FirebaseMLCommon/releases/download/1.0.1/FirebaseMLCommon.xcframework.zip",
-            checksum: "15f6291101e7b075a4d7eba5e9850981c35b9363bf8caf96687426890368a2ab")
+            name: "MLCommon",
+            url: "https://github.com/Userstree/FirebaseMLCommon/releases/download/1.1.1/MLCommon.xcframework.zip",
+            checksum: "2028d1008ffe8d538a9db43895d3e4607be05629df970259bb0fc04406273bcd")
     ]
 )
